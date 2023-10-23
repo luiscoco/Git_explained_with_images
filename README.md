@@ -445,7 +445,6 @@ Cherry-pick the Commit:
 Now, use the git cherry-pick command followed by the commit ID.
 
 ```bash
-Copy code
 git cherry-pick abcdef123456
 ```
 
