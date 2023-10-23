@@ -241,9 +241,12 @@ git branch -M main
 git push -u origin main
 ```
 
-## Merge vs Rebase
+## Merge vs Rebase vs Merge Fast-Forward
 
 ![image](https://github.com/luiscoco/Git_explained_with_images/assets/32194879/52794e94-2ecc-443c-875a-3021edaa3d56)
+
+![image](https://github.com/luiscoco/Git_explained_with_images/assets/32194879/892c9f10-3ab1-413a-b038-6e657c526d83)
+
 
 ## Merge step by step
 
