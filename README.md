@@ -377,3 +377,67 @@ git rebase --abort
 After successfully rebasing, your feature branch will now include the latest changes from the main branch. 
 
 Keep in mind that rewriting history with rebase can be dangerous if the branch has been shared with others, so use it with caution in those cases.
+
+## Cherry-picking in Git
+
+Cherry-picking in Git is a way to apply a specific commit from one branch to another. 
+
+It's like saying, "I want this commit from that branch, but not the whole branch." Here's a simple explanation with examples:
+
+Let's say you have two branches: feature-branch and main-branch. 
+
+You've made some changes in feature-branch and want to bring just one commit from it into main-branch.
+
+Find the Commit ID:
+
+First, find the commit ID of the specific commit you want to cherry-pick. 
+
+You can use git log to see the commit history.
+
+```bash
+git log
+```
+Note the commit ID (something like abcdef123456).
+
+Switch to the Target Branch:
+
+Make sure you are on the branch where you want to apply the commit, in this case, main-branch.
+
+```bash
+git checkout main-branch
+```
+
+Cherry-pick the Commit:
+
+Now, use the git cherry-pick command followed by the commit ID.
+
+```bash
+Copy code
+git cherry-pick abcdef123456
+```
+
+Git will apply the changes from that specific commit to your current branch (main-branch).
+
+Resolve Conflicts (if any):
+
+If there are conflicts during the cherry-pick process, Git will pause and ask you to resolve them. 
+
+After resolving, continue the cherry-pick process with:
+
+```bash
+git cherry-pick --continue
+```
+
+Or, if you want to cancel the cherry-pick:
+
+```bash
+git cherry-pick --abort
+```
+
+Finish:
+
+Once there are no conflicts or conflicts are resolved, you have successfully cherry-picked the commit.
+
+Remember, cherry-picking is a powerful tool, but use it wisely. 
+
+It's good for picking specific changes, but avoid cherry-picking a large number of commits, especially if they are interconnected, as it might lead to a messy history.
