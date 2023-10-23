@@ -52,3 +52,49 @@ It is supported by various platforms, including GitHub, GitLab, and Bitbucket.
 ![image](https://github.com/luiscoco/Git_explained_with_images/assets/32194879/f3376228-5f35-41ec-a45e-1bc74c779fb9)
 
 
+## Main actions in Git
+
+### Repository (Repo):
+
+Think of a repository as a folder that contains all your project files and the entire history of changes.
+
+### Working Directory:
+
+This is your current project state—what you see and work on.
+
+### Staging Area (Index):
+
+Before committing changes, you add them to the staging area. It's like preparing a package to be sent.
+
+### Commit:
+
+Committing is like taking a snapshot of your project at a specific point. It records changes you've made in the staging area.
+
+### Branch:
+
+Imagine branches as different parallel universes. Each branch can have its own changes without affecting the others. The main branch is usually called "master" or "main."
+
+### Merge:
+
+Merging is combining changes from one branch into another. It's like bringing changes from a parallel universe back to the main one.
+
+### Pull Request:
+
+In collaborative projects, a pull request is a way to propose changes to the main branch. Others review the changes before merging.
+
+### Clone:
+
+To clone a repository is like copying the entire project and its history to your machine.
+
+### Fetch:
+
+Fetching gets the latest changes from a remote repository but doesn't apply them to your working directory.
+
+### Pull:
+
+Pull is like fetching and then automatically merging the changes into your working directory.
+
+### Push:
+
+Pushing is sending your committed changes to a remote repository, making them available to others.
+
