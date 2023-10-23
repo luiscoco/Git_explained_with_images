@@ -369,6 +369,12 @@ Target Branch:
 A - B - E - F - G   (target_branch)
 ```
 
+Now, your main branch (target_branch) should have the desired commit sequence: 
+
+```css
+A -> B -> C -> D -> E' -> F' -> G'(target branch)
+```
+
 Now, let's rebase the source branch (source_branch) onto the target branch (target_branch):
 
 Make sure you are on the source branch at commit B:
