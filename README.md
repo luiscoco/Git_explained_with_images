@@ -413,6 +413,8 @@ Keep in mind that rewriting history with rebase can be dangerous if the branch h
 
 ## Cherry-picking in Git
 
+https://senali.hashnode.dev/git-cherry-pick
+
 Cherry-picking in Git is a way to apply a specific commit from one branch to another. 
 
 It's like saying, "I want this commit from that branch, but not the whole branch." Here's a simple explanation with examples:
