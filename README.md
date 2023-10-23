@@ -357,6 +357,8 @@ Here's a simple example to illustrate how git rebase works:
 
 ![image](https://github.com/luiscoco/Git_explained_with_images/assets/32194879/4cb0c4ee-0c28-4983-8a0f-4b16cee7b703)
 
+![image](https://github.com/luiscoco/Git_explained_with_images/assets/32194879/fde3c879-1a89-4d09-a603-74ba853d618d)
+
 Let's say you have a feature branch called feature_branch and a main branch called main.
 
 First, make sure you are on the feature branch:
