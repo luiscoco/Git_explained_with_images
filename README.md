@@ -247,6 +247,36 @@ git push -u origin main
 
 ![image](https://github.com/luiscoco/Git_explained_with_images/assets/32194879/892c9f10-3ab1-413a-b038-6e657c526d83)
 
+## Fast Forward step by step
+
+Check out the target branch at commit C:
+
+```bash
+git checkout C
+```
+
+This puts you on the commit C of the target branch.
+
+Merge the source branch:
+
+```bash
+git merge source_branch
+```
+
+Since this is a fast-forward merge and there are no divergent changes, Git will automatically move the target branch pointer forward to include the commits from the source branch.
+
+After this step, your commit history would look like:
+
+```rust
+A->B->C->D->E
+```
+
+Verify the changes:
+
+Review the changes using git log to ensure that everything looks good.
+
+By checking out commit C of the target branch before the merge, you ensure that the fast-forward merge incorporates the changes from the source branch (D and E) onto the latest commit of the target branch (C).
+
 
 ## Merge step by step
 
