@@ -345,6 +345,8 @@ git branch -d feature_branch
 
 ## Rebase step by step
 
+https://senali.hashnode.dev/git-rebase
+
 Git rebase is a powerful command used to integrate changes from one branch into another. 
 
 It works by moving or combining a sequence of commits to a new base commit. 
@@ -352,6 +354,8 @@ It works by moving or combining a sequence of commits to a new base commit.
 This can be useful for cleaning up your commit history, resolving conflicts, or keeping your feature branches up-to-date with the latest changes from the main branch.
 
 Here's a simple example to illustrate how git rebase works:
+
+![image](https://github.com/luiscoco/Git_explained_with_images/assets/32194879/4cb0c4ee-0c28-4983-8a0f-4b16cee7b703)
 
 Let's say you have a feature branch called feature_branch and a main branch called main.
 
