@@ -219,3 +219,22 @@ git diff
 
 These are some fundamental Git commands. Keep in mind that Git has a rich set of commands and options to handle various scenarios in version control.
 
+## How Create a repo on the command line
+
+```
+echo "# TestRepo" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/luiscoco/TestRepo.git
+git push -u origin main
+```
+
+## Push an existing repository from the command line
+
+```
+git remote add origin https://github.com/luiscoco/TestRepo.git
+git branch -M main
+git push -u origin main
+```
