@@ -98,3 +98,102 @@ Pull is like fetching and then automatically merging the changes into your worki
 
 Pushing is sending your committed changes to a remote repository, making them available to others.
 
+## Main Git commands
+
+main Git commands along with examples:
+
+git init:
+
+Initialize a new Git repository.
+bash
+Copy code
+git init
+git clone:
+
+Clone a repository into a new directory.
+bash
+Copy code
+git clone <repository_url>
+git add:
+
+Add changes to the staging area.
+bash
+Copy code
+git add <file_name>
+git commit:
+
+Commit changes with a message.
+bash
+Copy code
+git commit -m "Your commit message"
+git status:
+
+Show the status of changes as untracked, modified, or staged.
+bash
+Copy code
+git status
+git log:
+
+Display the commit history.
+bash
+Copy code
+git log
+git branch:
+
+List, create, or delete branches.
+bash
+Copy code
+git branch
+git branch <branch_name>
+git branch -d <branch_name>
+git checkout:
+
+Switch branches or restore working tree files.
+bash
+Copy code
+git checkout <branch_name>
+git merge:
+
+Merge changes from one branch into another.
+bash
+Copy code
+git merge <branch_name>
+git pull:
+
+Fetch from and integrate with another repository or a local branch.
+bash
+Copy code
+git pull origin <branch_name>
+git push:
+
+Update remote refs along with associated objects.
+bash
+Copy code
+git push origin <branch_name>
+
+### git remote:
+
+Manage connections to remote repositories.
+
+```bash
+git remote -v
+```
+
+### git fetch:
+
+Download objects and refs from another repository.
+
+```bash
+git fetch origin
+```
+
+### git diff:
+
+Show changes between commits, commit and working tree, etc.
+
+```bash
+git diff
+```
+
+These are some fundamental Git commands. Keep in mind that Git has a rich set of commands and options to handle various scenarios in version control.
+
