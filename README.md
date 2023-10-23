@@ -245,3 +245,67 @@ git push -u origin main
 
 ![image](https://github.com/luiscoco/Git_explained_with_images/assets/32194879/52794e94-2ecc-443c-875a-3021edaa3d56)
 
+## Merge step by step
+
+In Git, merging is the process of combining changes from different branches. 
+
+Let me walk you through a simple example.
+
+Let's say you have a Git repository with two branches: master and feature_branch. 
+
+The master branch is the main branch, and you've been working on a new feature in the feature_branch.
+
+Now, you want to merge the changes from feature_branch into master.
+
+Here are the steps:
+
+### Switch to the master branch:
+
+```bash
+git checkout master
+```
+
+### Pull the latest changes from master:
+
+```bash
+git pull origin master
+```
+
+### Merge feature_branch into master:
+
+```bash
+git merge feature_branch
+```
+
+If there are no conflicts, Git will automatically perform the merge. However, if there are conflicts (i.e., changes in the same lines of the same file in both branches), Git will prompt you to resolve them.
+
+### Resolve conflicts (if any):
+
+Git will mark the conflicted areas in the files. 
+
+Open the conflicted files, manually resolve the conflicts, and then:
+
+```bash
+git add <conflicted_file>
+git merge --continue
+```
+
+### Commit the merge:
+
+```bash
+git commit -m "Merge feature_branch into master"
+```
+
+### Push the changes to the remote repository:
+
+```bash
+git push origin master
+```
+
+That's it! Now, the changes from feature_branch are merged into master.
+
+It's a good practice to delete the feature branch after the merge if you no longer need it:
+
+```bash
+git branch -d feature_branch
+```
