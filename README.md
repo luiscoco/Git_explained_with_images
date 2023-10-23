@@ -421,6 +421,8 @@ Let's say you have two branches: feature-branch and main-branch.
 
 You've made some changes in feature-branch and want to bring just one commit from it into main-branch.
 
+![image](https://github.com/luiscoco/Git_explained_with_images/assets/32194879/6da35b4b-0e71-45d9-83bb-38504e0c340c)
+
 Find the Commit ID:
 
 First, find the commit ID of the specific commit you want to cherry-pick. 
