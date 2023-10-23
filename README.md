@@ -164,9 +164,10 @@ git branch -d <branch_name>
 ### git checkout:
 
 Switch branches or restore working tree files.
-bash
-Copy code
+
+```bash
 git checkout <branch_name>
+```
 
 ### git merge:
 
