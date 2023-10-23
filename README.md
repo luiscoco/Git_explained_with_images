@@ -355,67 +355,72 @@ This can be useful for cleaning up your commit history, resolving conflicts, or 
 
 Here's a simple example to illustrate how git rebase works:
 
-![image](https://github.com/luiscoco/Git_explained_with_images/assets/32194879/4cb0c4ee-0c28-4983-8a0f-4b16cee7b703)
+Assuming your commit history looks like this:
 
-![image](https://github.com/luiscoco/Git_explained_with_images/assets/32194879/fde3c879-1a89-4d09-a603-74ba853d618d)
+Source Branch:
 
-Let's say you have a feature branch called feature_branch and a main branch called main.
-
-First, make sure you are on the feature branch:
-
-```bash
-git checkout feature_branch
+```css
+A - B - C - D   (source_branch)
 ```
 
-Then, make some changes and commit them:
+Target Branch:
 
-```bash
-# Make changes to your code
-git add .
-git commit -m "Feature added"
+```css
+A - B - E - F - G   (target_branch)
 ```
 
-Now, let's assume there have been some new changes on the main branch that you want to incorporate into your feature branch. First, switch to the main branch:
+Now, let's rebase the source branch (source_branch) onto the target branch (target_branch):
+
+Make sure you are on the source branch at commit B:
 
 ```bash
-git checkout main
+git checkout source_branch
+git reset --hard B
 ```
 
-Pull the latest changes from the remote repository:
+Now, you are on the source branch at commit B.
+
+Start the rebase:
 
 ```bash
-git pull origin main
+git rebase target_branch
 ```
 
-Switch back to your feature branch:
+During this step, Git applies commits A and B from the target branch.
 
-```bash
-git checkout feature_branch
-```
+Resolve any conflicts:
 
-Now, you can rebase your feature branch onto the latest commit of the main branch:
-
-```bash
-git rebase main
-```
-
-If there are any conflicts, Git will prompt you to resolve them. 
-
-After resolving conflicts, continue the rebase:
+If there are conflicts, Git will pause and prompt you to resolve them. After resolving conflicts, continue the rebase:
 
 ```bash
 git rebase --continue
 ```
 
-If you encounter issues and want to abort the rebase:
+This will apply commits C and D from the source branch.
+
+Repeat step 3 until rebase is complete:
+
+If there are multiple conflicts or if Git pauses for any reason, resolve the issues and continue the rebase until it's complete.
+
+Switch to the target branch:
 
 ```bash
-git rebase --abort
+git checkout target_branch
 ```
 
-After successfully rebasing, your feature branch will now include the latest changes from the main branch. 
+Fast-forward the target branch:
 
-Keep in mind that rewriting history with rebase can be dangerous if the branch has been shared with others, so use it with caution in those cases.
+Fast-forward the target branch to the new rebased source branch:
+
+```bash
+git merge source_branch
+```
+
+At this point, the target branch will include commits A, B, C, D from the source branch, and then commits E', F', G' from the original target branch.
+
+Now, your main branch (target_branch) should have the desired commit sequence: A -> B -> C -> D -> E' -> F' -> G'. 
+
+The original commits from target_branch (E, F, G) are replaced with the new ones from the rebase.
 
 ## Cherry-picking in Git
 
