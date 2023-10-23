@@ -309,3 +309,17 @@ It's a good practice to delete the feature branch after the merge if you no long
 ```bash
 git branch -d feature_branch
 ```
+
+## Rebase step by step
+
+Git rebase is a powerful command used to integrate changes from one branch into another. 
+
+It works by moving or combining a sequence of commits to a new base commit. 
+
+This can be useful for cleaning up your commit history, resolving conflicts, or keeping your feature branches up-to-date with the latest changes from the main branch.
+
+Here's a simple example to illustrate how git rebase works:
+
+Let's say you have a feature branch called feature_branch and a main branch called main.
+
+
