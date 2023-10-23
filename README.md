@@ -351,7 +351,6 @@ git pull origin main
 Switch back to your feature branch:
 
 ```bash
-Copy code
 git checkout feature_branch
 ```
 
