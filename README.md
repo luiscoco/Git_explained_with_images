@@ -102,74 +102,95 @@ Pushing is sending your committed changes to a remote repository, making them av
 
 main Git commands along with examples:
 
-git init:
+### git init:
 
 Initialize a new Git repository.
-bash
-Copy code
+
+```bash
 git init
-git clone:
+```
+
+### git clone:
 
 Clone a repository into a new directory.
-bash
-Copy code
+
+```bash
 git clone <repository_url>
-git add:
+```
+
+### git add:
 
 Add changes to the staging area.
-bash
-Copy code
+
+```bash
 git add <file_name>
-git commit:
+```
+
+### git commit:
 
 Commit changes with a message.
-bash
-Copy code
+
+```bash
 git commit -m "Your commit message"
-git status:
+```
+
+### git status:
 
 Show the status of changes as untracked, modified, or staged.
-bash
-Copy code
+
+```bash
 git status
-git log:
+```
+
+### git log:
 
 Display the commit history.
-bash
-Copy code
+
+```bash
 git log
-git branch:
+```
+
+### git branch:
 
 List, create, or delete branches.
-bash
+
+```bash
 Copy code
 git branch
 git branch <branch_name>
 git branch -d <branch_name>
-git checkout:
+```
+
+### git checkout:
 
 Switch branches or restore working tree files.
 bash
 Copy code
 git checkout <branch_name>
-git merge:
+
+### git merge:
 
 Merge changes from one branch into another.
-bash
-Copy code
+
+```bash
 git merge <branch_name>
-git pull:
+```
+
+### git pull:
 
 Fetch from and integrate with another repository or a local branch.
-bash
-Copy code
+
+```bash
 git pull origin <branch_name>
-git push:
+```
+
+### git push:
 
 Update remote refs along with associated objects.
-bash
-Copy code
+
+```bash
 git push origin <branch_name>
+```
 
 ### git remote:
 
