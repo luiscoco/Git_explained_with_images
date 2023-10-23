@@ -322,4 +322,59 @@ Here's a simple example to illustrate how git rebase works:
 
 Let's say you have a feature branch called feature_branch and a main branch called main.
 
+First, make sure you are on the feature branch:
 
+```bash
+git checkout feature_branch
+```
+
+Then, make some changes and commit them:
+
+```bash
+# Make changes to your code
+git add .
+git commit -m "Feature added"
+```
+
+Now, let's assume there have been some new changes on the main branch that you want to incorporate into your feature branch. First, switch to the main branch:
+
+```bash
+git checkout main
+```
+
+Pull the latest changes from the remote repository:
+
+```bash
+git pull origin main
+```
+
+Switch back to your feature branch:
+
+```bash
+Copy code
+git checkout feature_branch
+```
+
+Now, you can rebase your feature branch onto the latest commit of the main branch:
+
+```bash
+git rebase main
+```
+
+If there are any conflicts, Git will prompt you to resolve them. 
+
+After resolving conflicts, continue the rebase:
+
+```bash
+git rebase --continue
+```
+
+If you encounter issues and want to abort the rebase:
+
+```bash
+git rebase --abort
+```
+
+After successfully rebasing, your feature branch will now include the latest changes from the main branch. 
+
+Keep in mind that rewriting history with rebase can be dangerous if the branch has been shared with others, so use it with caution in those cases.
