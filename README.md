@@ -238,3 +238,8 @@ git remote add origin https://github.com/luiscoco/TestRepo.git
 git branch -M main
 git push -u origin main
 ```
+
+## Merge vs Rebase
+
+![image](https://github.com/luiscoco/Git_explained_with_images/assets/32194879/52794e94-2ecc-443c-875a-3021edaa3d56)
+
