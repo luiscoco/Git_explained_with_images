@@ -1,9 +1,12 @@
 # Git_explained_with_images
-Git is a distributed version control system (DVCS) that helps developers track changes in their source code during software development. 
 
-It was created by Linus Torvalds in 2005 and has become the most widely used version control system in the world.
+Git is a distributed version control system (DVCS) that helps developers track changes in their source code during software development
+
+It was created by Linus Torvalds in 2005 and has become the most widely used version control system in the world
 
 ![image](https://github.com/luiscoco/Git_explained_with_images/assets/32194879/ee332fc6-e851-4858-a2c1-e543e3ad33a8)
+
+![image](https://github.com/luiscoco/Git_explained_with_images/assets/32194879/467c5f81-7aea-4143-b728-bb8b0b144e6b)
 
 ## Git key concepts:
 
